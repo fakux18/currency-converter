@@ -1,0 +1,140 @@
+.information-block {
+    background: #1A8DFF;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    font-size: 32px;
+    align-items: stretch;
+    justify-content: center;
+    p {
+        color: #fff;
+        margin-top: 50px;
+    }
+}
+
+  .main {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-icon-change {
+    cursor: pointer;
+    align-self: flex-end;
+    .icon-change {
+      border-radius: 50%;
+      border: 1px solid #177FE5;
+      padding: 2px;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+.converter-container-main {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 30px;
+  transform: translateY(-50%);
+}
+.converter-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .input-group label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 8px;
+  }
+}
+
+
+.converter-container input,
+.converter-container select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.result-text {
+  font-size: 32px;
+  color: #000;
+  font-weight: 600;
+}
+
+.result-text-info {
+  color: #757575;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.result-text-market {
+  background: #E8F3FF;
+  padding: 16px;
+  border-radius: 8px;
+  color: #000;
+  line-height: 35px;
+}
+
+.result-section {
+  display: flex;
+  width: 100%;
+  margin-top: 60px;
+
+  .result-section-left,
+  .result-section-right {
+    width: 50%;
+    
+  }
+  .result-text-currency-update {
+    color: #757575;
+    font-size: 12px;
+    margin-top: 12px;
+    text-align: end;
+  }
+}
+.result-text-currency-update-hidden {
+  display: none;
+  color: #757575;
+  font-size: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .information-block {
+    text-align: center;
+  }
+  .converter-container-main {
+    transform: translateY(-20%);
+  }
+  .converter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .result-text-market {
+    display: none;
+  }
+  .result-text-currency-update {
+    display: none;
+  }
+  .result-text-currency-update-hidden {
+    display: block;
+  }
+  .container-icon-change {
+    align-self: flex-start;
+  }
+}
