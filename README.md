@@ -10,8 +10,8 @@ Pasos para instalar y ejecutar el proyecto
 
 1-Clona el repositorio
 
-git clone <URL-del-repositorio>
-cd <nombre-del-proyecto>
+git clone "nombre del repositorio"
+cd currency-converter
 
 2-Instala las dependencias
 
